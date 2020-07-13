@@ -1,0 +1,14 @@
+{{!--
+ // action ->After submitting where to go, if action is not specified then after submitting same page open.
+// method ->with which method data will be sent to server, if you not defined so by default get method will be sent.
+
+// if you are sending data in get, so can send data through query, req.query.email
+// in post you will need middleware to parts the req body, to read content we need middleware. --}}
+
+<h2>signup form</h2>
+<form action="/postcall" method="POST">
+    <input type="text" name="username" placeholder="Name...">
+    <input type="text" name="password" placeholder="Pass...">
+      <input type="text" name="email" placeholder="Pass...">
+    <button type="submit">Button</button>
+</form>
